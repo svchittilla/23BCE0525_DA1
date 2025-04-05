@@ -27,7 +27,7 @@ body{
 nav{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
 }
 .logo{
@@ -41,7 +41,7 @@ nav ul li{
 nav ul li a{
     color: white;
     text-decoration: none;
-    font-size: medium;
+    font-size: larger;
     position: relative;
 }
 nav ul li a::after{
