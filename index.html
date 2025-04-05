@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/2bbb00b19f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo" alt="Logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Sophomore</p>
+                <h1>Hi, I'm <span>SIVARAM</span> <br> from VIT Vellore</h1>
+            </div>
+        </div>
+    </div>
+<!-- ----------------------about-------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="User">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I’m a passionate Statistics and Machine Learning enthusiast, and a huge gamer at heart. I love exploring the mathematical foundations behind algorithms and applying them to real-world problems. Whether it's diving deep into data or spending hours in the Rift, I enjoy the thrill of both challenges.</p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Mathematical Skills</span><br>Probability & Statistics, Calculus (Integral & Differential), Linear Algebra</li>
+                            <li><span>Development</span><br>HTML, CSS, JavaScript, Tailwind CSS</li>
+                            <li><span>Programming</span><br>Python, C, C++, Java</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Jan 2025 – Present</span><br>Co-Secretary, TAG Club (Technology and Gaming Club), VIT</li>
+                            <li><span>May 2024</span><br>Contributed to and published a research article in the field of Chemistry</li>
+                            <li><span>Projects</span><br>Created several small projects including a mini chatbot using Python and web scraping techniques</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Aug 2023 – Aug 2027</span><br>B.Tech in Computer Science, VIT Vellore</li>
+                            <li><span>2022</span><br>Completed Intermediate Education with 97.5% marks</li>
+                            <li><span>2020</span><br>10th Grade (State Board) with a perfect 10 CGPA</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------services--------------- -->
+    <div class="services">
+        <div class="container">
+            <h1 class="sub-title">Work</h1>
+            <div class="services-list">
+                <div>
+                    <h2>Research Paper</h2>
+                    <p>
+                        Third author of <em>"A novel Fe(III) and 2-amino-perimidinium based hybrid material catalyzed Friedel–Crafts type hydroarylation of alkynes"</em> — describes the use of a novel Fe(III) complex in catalytic organic synthesis.
+                    </p>
+                    <a href="https://doi.org/10.1016/j.molstruc.2024.138750" target="_blank">Learn more</a>
+                </div>
+                <div>
+                    <h2>Mini Chatbot</h2>
+                    <p>My first Python-based mini project — a rule-based chatbot that interacts with users using if-else logic, integrated with basic web scraping for dynamic responses.</p>
+                    <a href="https://github.com/svchittilla/chatbot" target="_blank">Learn more</a>
+                </div>
+                <div>
+                    <h2>Event POC – VGL: FIFA at Riviera '25</h2>
+                    <p>My first hands-on experience as a Point of Contact after becoming a board member of TAG Club. I helped organize VGL: FIFA during Riviera '25, managing logistics, registrations, and on-ground execution. The event saw high participation and was a huge success.</p>
+                    <a href="https://www.linkedin.com/feed/update/urn:li:activity:7299802120919175168/" target="_blank">Learn more</a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------------Contact------------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-share" style="color: greenyellow; margin-right: 15px; font-size: 18px;"></i>svchittilla@gmail.com</p>
+                    <p><i class="fa-solid fa-phone" style="color: greenyellow; margin-right: 15px; font-size: 18px;"></i>8309613425</p>
+                    <div class="icons">
+                        <a href="https://www.linkedin.com/in/svchittilla/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/sivaram_cv/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="madeBy">
+            <p>Made By Chittilla Venkata Sivaram, 23BCE0525</p>
+        </div>
+    </div>
+
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+    </script>
+</body>
+</html>
